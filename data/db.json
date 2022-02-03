@@ -1,0 +1,32 @@
+{
+   "restaurant": [
+     {
+       "id": 1,
+       "name": "Pizza Hut",
+       "address": "Noida",
+       "rating": "4.5",
+       "email": "pizzahut@test.com"
+     },
+     {
+      "id": 2,
+      "name": "McDonald",
+      "address": "Delhi",
+      "rating": "4.0",
+      "email": "mcdonald@test.com"
+    },
+    {
+      "id": 1,
+      "name": "Burger King",
+      "address": "Noida",
+      "rating": "4.5",
+      "email": "burgerking@test.com"
+    },
+    {
+      "id": 1,
+      "name": "AB Restaurant",
+      "address": "Delhi",
+      "rating": "4.0",
+      "email": "ab@test.com"
+    }
+   ]
+  }
