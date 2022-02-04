@@ -1,13 +1,13 @@
 {
-   "restaurant": [
-     {
-       "id": 1,
-       "name": "Pizza Hut",
-       "address": "Noida",
-       "rating": "4.5",
-       "email": "pizzahut@test.com"
-     },
-     {
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Pizza Hut",
+      "address": "Noida",
+      "rating": "4.5",
+      "email": "pizzahut@test.com"
+    },
+    {
       "id": 2,
       "name": "McDonald",
       "address": "Delhi",
@@ -15,18 +15,39 @@
       "email": "mcdonald@test.com"
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "Burger King",
       "address": "Noida",
       "rating": "4.5",
       "email": "burgerking@test.com"
     },
     {
-      "id": 1,
+      "id": 4,
       "name": "AB Restaurant",
       "address": "Delhi",
       "rating": "4.0",
       "email": "ab@test.com"
+    },
+    {
+      "id": 5,
+      "name": "AB",
+      "email": "ab@gmail.com",
+      "rating": "4.9",
+      "address": "Noida"
+    },
+    {
+      "name": "ABC",
+      "email": "abc@gmail.com",
+      "rating": "4.6",
+      "address": "Noida",
+      "id": 6
+    },
+    {
+      "name": "KFC",
+      "email": "kfc@gmail.com",
+      "rating": "4.7",
+      "address": "Delhi",
+      "id": 7
     }
-   ]
-  }
+  ]
+}

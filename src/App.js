@@ -23,12 +23,12 @@ function App() {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link href="#home"> <Link  to={"/"}>Home</Link></Nav.Link>
-        <Nav.Link href="#link"><Link to={"/details"}>Details</Link> </Nav.Link>
-        <Nav.Link href="#link"><Link  to={"/update"}>Update</Link></Nav.Link>
-        <Nav.Link href="#link"><Link  to={"/create"}>Create</Link> </Nav.Link>
-        <Nav.Link href="#link"><Link  to={"/search"}>Restro Search</Link> </Nav.Link>
-        <Nav.Link href="#link"><Link  to={"/list"}>Restro list</Link></Nav.Link>
-        {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">
+        <Nav.Link href="#link"><Link to={"/list"}>List</Link> </Nav.Link>
+        <Nav.Link href="#link"><Link  to={"/create"}>Create</Link></Nav.Link>
+        <Nav.Link href="#link"><Link  to={"/search"}>Search</Link> </Nav.Link>
+        <Nav.Link href="#link"><Link  to={"/details"}>Detail</Link> </Nav.Link>
+        {/*<Nav.Link href="#link"><Link  to={"/update"}>Update</Link></Nav.Link>
+        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -44,11 +44,9 @@ function App() {
            
         
          
-            <Route  path="/" element={<Home/>}
-     
-            />
-            {/*<Route path="/update/:id" render={props=>(<RestaurantUpdate {...props}/>)}/> */}
-            <Route path="/update"    element={<RestaurantUpdate/>} />
+            <Route  path="/" element={<Home/>} /> 
+            <Route path="/update/:id" render={props=>(<RestaurantUpdate key={props.match.params.id} {...props}/> )} /> 
+           {/*<Route path="/update"    element={<RestaurantUpdate/>} />*/}
             
             <Route path="/list"    element={<RestaurantList/>} />
             <Route path="/create"  element={<RestaurantCreate/>} />
