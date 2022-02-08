@@ -32,7 +32,7 @@ class RestaurantList extends Component {
                                         <th>Name</th>
                                         <th>Rating</th>
                                         <th>Location</th>
-                                        <th>Update</th>
+                                      {/*  <th>Create</th> */}
 
                                     </tr>
                                 </thead>
@@ -50,7 +50,7 @@ class RestaurantList extends Component {
                                                 <td>{item.name}</td>
                                                 <td>{item.rating}</td>
                                                 <td>{item.address}</td>
-                                                <td><Link to={"/update/"+item.id}>Edit</Link></td>
+                                              {/*  <td><Link to={"/create/"+item.id}>Add</Link></td> */}
                                             </tr>
                                         )
                                     }
