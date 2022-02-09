@@ -725,6 +725,16 @@ a.nav-link a {
   flex-basis: 100%;
   flex-grow: initial;
 }
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: initial!important;
+  align-items: center;
+}
+a.nav-item{
+  color: #000, imp !important;
+  text-decoration: none!important;
+  font-weight: 600;
+}
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .img-container h3 {

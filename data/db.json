@@ -8,13 +8,6 @@
       "email": "pizzahut@test.com"
     },
     {
-      "id": 2,
-      "name": "McDonald",
-      "address": "Delhi",
-      "rating": "4.0",
-      "email": "mcdonald@test.com"
-    },
-    {
       "id": 3,
       "name": "Burger King",
       "address": "Noida",
@@ -27,13 +20,6 @@
       "address": "Delhi",
       "rating": "4.0",
       "email": "ab@test.com"
-    },
-    {
-      "id": 5,
-      "name": "AB",
-      "email": "ab@gmail.com",
-      "rating": "4.9",
-      "address": "Noida"
     },
     {
       "name": "ABC",
@@ -50,25 +36,11 @@
       "id": 7
     },
     {
-      "name": "xyz",
-      "email": "xyz@gmail.com",
-      "rating": "4.3",
-      "address": "Delhi",
+      "name": "AAA",
+      "email": "aaa@gmail.com",
+      "rating": "4.5",
+      "address": "Lucknow",
       "id": 8
-    },
-    {
-      "name": "asd",
-      "email": "asd",
-      "rating": "4.9",
-      "address": "Gurgaon",
-      "id": 9
-    },
-    {
-      "name": "asd",
-      "email": "asd@gmail.com",
-      "rating": "4.2",
-      "address": "Gorakhpur",
-      "id": 10
     }
   ]
 }

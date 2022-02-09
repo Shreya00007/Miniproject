@@ -30,15 +30,15 @@ class RestaurantCreate extends Component {
                 <form>
                     <h1>Restaurant Create</h1>
                     <div>
-                        <input onChange={(event) => { this.setState({ name: event.target.value }) }}
-                            placeholder="Restaurant Name" /> <br /><br />
-                        <input onChange={(event) => { this.setState({ email: event.target.value }) }}
-                            placeholder="Restaurant Email" /> <br /><br />
-                        <input onChange={(event) => { this.setState({ rating: event.target.value }) }}
-                            placeholder="Restaurant Rating" /> <br /><br />
-                        <input onChange={(event) => { this.setState({ address: event.target.value }) }}
-                            placeholder="Restaurant Address" /> <br /><br />
-                        <button onClick={() => { this.create() }}>Add Restaurant</button>
+                        <input className="form-control" onChange={(event) => { this.setState({ name: event.target.value }) }}
+                            placeholder="Restaurant Name" /> <br />
+                        <input className="form-control" onChange={(event) => { this.setState({ email: event.target.value }) }}
+                            placeholder="Restaurant Email" /> <br />
+                        <input className="form-control" onChange={(event) => { this.setState({ rating: event.target.value }) }}
+                            placeholder="Restaurant Rating" /> <br />
+                        <input className="form-control" onChange={(event) => { this.setState({ address: event.target.value }) }}
+                            placeholder="Restaurant Address" /> <br />
+                        <button className="btn btn-success" onClick={() => { this.create() }}>Add Restaurant</button>
                     </div>
                 </form>
             </div>

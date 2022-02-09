@@ -6,9 +6,13 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import Home from "./components/Home"
 import RestaurantUpdate from "./components/RestaurantUpdate"
 import RestaurantCreate from "./components/RestaurantCreate"
-import RestaurantDetail from "./components/RestaurantDetail"
+
 import RestaurantSearch from "./components/RestaurantSearch"
-import RestaurantList from "./components/RestaurantList"
+import RestaurantList from "./components/RestaurantList";
+import Login from "./components/Login";
+import  Restaurant from './logo.jpg';
+
+
 function App() {
   return (
     <div className="App">   
@@ -18,7 +22,9 @@ function App() {
 
     <Navbar bg="light" expand="lg">
   <Container>
-    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar.Brand href="#home">
+   { /* <img src={Restaurant} alt={Restaurant}/>*/}
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
@@ -26,7 +32,7 @@ function App() {
         <Nav.Link href="#link"><Link to={"/list"}>List</Link> </Nav.Link>
         <Nav.Link href="#link"><Link  to={"/create"}>Create</Link></Nav.Link>
         <Nav.Link href="#link"><Link  to={"/search"}>Search</Link> </Nav.Link>
-        <Nav.Link href="#link"><Link  to={"/details"}>Detail</Link> </Nav.Link>
+        <Nav.Link href="#link"><Link  to={"/login"}>Login</Link> </Nav.Link>
         {/*<Nav.Link href="#link"><Link  to={"/update"}>Update</Link></Nav.Link>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -41,17 +47,30 @@ function App() {
 </Navbar>
 
           <Routes>
-           
+           {/* <Route path="/list">
+           <RestaurantList />
+           </Route>
+           <Route path="/create">
+           <RestaurantCreate />
+           </Route>
+           <Route path="/search">
+           <RestaurantSearch />
+           </Route>
+           <Route exact path="/">
+           <Home />
+           </Route>*/}
         
          
-            <Route  path="/" element={<Home/>} /> 
-            <Route path="/update/:id" render={props=>(<RestaurantUpdate key={props.match.params.id} {...props}/> )} /> 
-           {/*<Route path="/update"    element={<RestaurantUpdate/>} />*/}
+           <Route  path="/" element={<Home/>} /> 
+            {/* <Route path="/update/:id" render={props=>(<RestaurantUpdate key={props.match.params.id} {...props}/> )} /> */}
+           <Route path="/update"    element={<RestaurantUpdate/>} />
             
             <Route path="/list"    element={<RestaurantList/>} />
             <Route path="/create"  element={<RestaurantCreate/>} />
             <Route path="/search"  element={<RestaurantSearch/>} />
-            <Route path="/details" element={<RestaurantDetail/>} />
+            <Route path="/login" element={<Login/>} />
+            
+            
       
           </Routes>
           

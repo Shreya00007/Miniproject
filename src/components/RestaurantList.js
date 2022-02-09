@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Table } from 'react-bootstrap'
-import { Link } from 'react-router-dom';
+import { Table } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
+import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
 
 
 class RestaurantList extends Component {
@@ -11,12 +12,33 @@ class RestaurantList extends Component {
         }
     }
     componentDidMount() {
+        this.getData()
+    }
+    getData()
+    {
         fetch("http://localhost:8000/restaurant").then((response) => {
             response.json().then((result) => {
                 console.warn(result)
                 this.setState({ list: result })
             })
         })
+    }
+    delete(id)
+    {
+        fetch('http://localhost:8000/restaurant/'+id,
+        {
+            method:"DELETE",
+            // headers:{
+            //     'Content-Type':'application/JSON'
+            // },
+            
+        }).then((result)=>{
+           result.json().then((resp)=>{
+               alert("Restaurant has been deleted")
+               this.getData()
+           })
+        })
+
     }
     render() {
         return (
@@ -32,7 +54,7 @@ class RestaurantList extends Component {
                                         <th>Name</th>
                                         <th>Rating</th>
                                         <th>Location</th>
-                                      {/*  <th>Create</th> */}
+                                        <th>Operation</th> 
 
                                     </tr>
                                 </thead>
@@ -50,6 +72,7 @@ class RestaurantList extends Component {
                                                 <td>{item.name}</td>
                                                 <td>{item.rating}</td>
                                                 <td>{item.address}</td>
+                                                <span onClick={()=> this.delete(item.id)}><DeleteForeverOutlinedIcon/></span>
                                               {/*  <td><Link to={"/create/"+item.id}>Add</Link></td> */}
                                             </tr>
                                         )
