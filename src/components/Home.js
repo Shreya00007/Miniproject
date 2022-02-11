@@ -3,6 +3,16 @@ import  About from "./Images/about-photo.jpg"
 import  About1 from "./Images/food1 (1).jpg"
 import  About2 from "./Images/food2.jpg"
 import  About3 from "./Images/food3.jpg"
+import  About4 from "./Images/food4.jpg"
+import  About5 from "./Images/food5.jpg"
+import  About6 from "./Images/food6.jpg"
+import  About7 from "./Images/food7.jpg"
+import  About8 from "./Images/food8.jpg"
+import  About9 from "./Images/food9.jpg"
+import  About10 from "./Images/feed1.jpg"
+import  About11 from "./Images/feed2.jpg"
+import  About12 from "./Images/feed3.jpg"
+import  About13 from "./Images/feed4.jpg"
 
 
 
@@ -62,7 +72,7 @@ class Home extends Component {
           <div className="img-content">
             <h3>fruite</h3>
             <a
-              href="https://en.wikipedia.org/wiki/Fruit"
+              href="#Fruit"
               className="btn btn-primary"
               target="blank"
             >
@@ -108,7 +118,7 @@ class Home extends Component {
     <div className="food-menu-container container">
       <div className="food-menu-item">
         <div className="food-img">
-          <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
+          <img src={About4} alt="" />
         </div>
         <div className="food-description">
           <h2 className="food-titile">Food Menu Item 1</h2>
@@ -120,7 +130,7 @@ class Home extends Component {
       </div>
       <div className="food-menu-item">
         <div className="food-img">
-          <img src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg" alt="error" />
+          <img src={About5} alt="error" />
         </div>
         <div className="food-description">
           <h2 className="food-titile">Food Menu Item 2</h2>
@@ -132,7 +142,7 @@ class Home extends Component {
       </div>
       <div className="food-menu-item">
         <div className="food-img">
-          <img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" alt="" />
+          <img src={About6} alt="" />
         </div>
         <div className="food-description">
           <h2 className="food-titile">Food Menu Item 3</h2>
@@ -144,7 +154,7 @@ class Home extends Component {
       </div>
       <div className="food-menu-item">
         <div className="food-img">
-          <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
+          <img src={About7} alt="" />
         </div>
         <div className="food-description">
           <h2 className="food-titile">Food Menu Item 4</h2>
@@ -156,7 +166,7 @@ class Home extends Component {
       </div>
       <div className="food-menu-item">
         <div className="food-img">
-          <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
+          <img src={About8} alt="" />
         </div>
         <div className="food-description">
           <h2 className="food-titile">Food Menu Item 5</h2>
@@ -168,7 +178,7 @@ class Home extends Component {
       </div>
       <div className="food-menu-item">
         <div className="food-img">
-          <img src="https://i.postimg.cc/Jnxc8xQt/food-menu6.jpg" alt="" />
+          <img src={About9} alt="" />
         </div>
         <div className="food-description">
           <h2 className="food-titile">Food Menu Item 6</h2>
@@ -186,7 +196,7 @@ class Home extends Component {
       <div className="testimonial-box">
         <div className="customer-detail">
           <div className="customer-photo">
-            <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+            <img src={About10} alt="" />
             <p className="customer-name">Ross Lee</p>
           </div>
         </div>
@@ -205,7 +215,7 @@ class Home extends Component {
       <div className="testimonial-box">
         <div className="customer-detail">
           <div className="customer-photo">
-            <img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
+            <img src={About11} alt="" />
             <p className="customer-name">Amelia Watson</p>
           </div>
         </div>
@@ -224,7 +234,7 @@ class Home extends Component {
       <div className="testimonial-box">
         <div className="customer-detail">
           <div className="customer-photo">
-            <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+            <img src={About12} alt="" />
             <p className="customer-name">Ben Roy</p>
           </div>
         </div>
@@ -245,7 +255,7 @@ class Home extends Component {
   <section id="contact">
     <div className="contact-container container">
       <div className="contact-img">
-        <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+        <img src={About13} alt="" />
       </div>
       <div className="form-container">
         <h2>Contact Us</h2>
@@ -264,7 +274,7 @@ class Home extends Component {
     </div>
   </section>
   <footer id="footer">
-    <h2>Restraunt © all rights reserved</h2>
+    <h2>Restaurant © all rights reserved</h2>
   </footer>
   {/* 
     .................../ JS Code for smooth scrolling /...................... */}

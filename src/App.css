@@ -127,7 +127,19 @@ body {
   text-transform: uppercase;
   font-weight: small;
 }
-
+.navbar {
+  position: relative;
+  display: flex;
+  height: 73px!important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.navbar-light .navbar-brand img {
+    width: 100px;
+}
 .btn-primary {
   color: #fff;
   background: #16a083;

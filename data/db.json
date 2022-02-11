@@ -22,13 +22,6 @@
       "email": "ab@test.com"
     },
     {
-      "name": "ABC",
-      "email": "abc@gmail.com",
-      "rating": "4.6",
-      "address": "Noida",
-      "id": 6
-    },
-    {
       "name": "KFC",
       "email": "kfc@gmail.com",
       "rating": "4.7",
@@ -36,11 +29,32 @@
       "id": 7
     },
     {
-      "name": "AAA",
-      "email": "aaa@gmail.com",
-      "rating": "4.5",
-      "address": "Lucknow",
-      "id": 8
+      "name": "McDonald ",
+      "email": "mc@gmail.com",
+      "rating": "4.9",
+      "address": "Noida",
+      "id": 9
+    },
+    {
+      "name": "Burger",
+      "email": "burger@gmail.com",
+      "rating": "5",
+      "address": "Gurgaon",
+      "id": 13
+    },
+    {
+      "name": "Shreya",
+      "email": null,
+      "rating": null,
+      "address": null,
+      "id": 23
+    },
+    {
+      "name": null,
+      "email": null,
+      "rating": null,
+      "address": null,
+      "id": 24
     }
   ]
 }

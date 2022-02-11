@@ -1,29 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Container, Row, Col,  } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
-function Login()
-{
-    const [name,setName]=useState("");
-    const [password,setPassword]=useState("");
-    const[email,setEmail]=useState("");
-   
-function SignUp()
-{
-    
-    console.warn()
-}
+function Login() {
+    // const history = useNavigate();
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+
+    //     history('/home');
+    // }
     return (
-        <div className="col-sm-6 offset-sm-3">
-        <h1>User Login</h1>
-        <input type="text" value={name} onChange={(e)=>setName(e.target.value)}className="form-control" />
-        <br/>
-        <input type="text"value={password} onChange={(e)=>setPassword(e.target.value)} className="form-control" />
-        <br/>
-        <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)} className="form-control" />
-        <br/>
-        <button onClick={SignUp} className="btn btn-primary">Login</button>
+        <>
+            <div className="Restroform">
+                <Container>
+                    <Row>
+                        <Col xs={12} md={12}>
+                            <div className="Login">
+                                
+                                <form>
+                                    <h3>Login</h3>
+                                    <div className="form-group" >
 
-        </div>
-    )
+                                        <input type="email" placeholder="Email ID" className="form-control"/>
+                                    </div><br/>
+                                    <div className="form-group">
+                                        
+                                        <input type="password" placeholder="Password" className="form-control"/>
+                                    </div>
+                                    <div className="form-group">
+                                        <Link to="/" className="btn btn-success">Submit</Link>
+                                    </div>
+                                </form>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        </>
+    );
 }
 
 export default Login;

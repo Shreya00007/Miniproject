@@ -56,7 +56,7 @@ class Restrosearch extends Component {
     render() {
         return (
             <Container>
-                <h1>Restrosearch</h1>
+                <h1>Restaurant Search</h1>
                
                <Form.Control type="text" onChange={(event)=>this.search(event.target.value)} placeholder="Search Restaurant" />
                <div>

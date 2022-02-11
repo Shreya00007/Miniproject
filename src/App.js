@@ -10,6 +10,7 @@ import RestaurantCreate from "./components/RestaurantCreate"
 import RestaurantSearch from "./components/RestaurantSearch"
 import RestaurantList from "./components/RestaurantList";
 import Login from "./components/Login";
+// import Fruit from "./components/Fruit";
 import  Restaurant from './logo.jpg';
 
 
@@ -23,7 +24,7 @@ function App() {
     <Navbar bg="light" expand="lg">
   <Container>
     <Navbar.Brand href="#home">
-   { /* <img src={Restaurant} alt={Restaurant}/>*/}
+    <img src={Restaurant} alt={Restaurant}/>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -47,24 +48,12 @@ function App() {
 </Navbar>
 
           <Routes>
-           {/* <Route path="/list">
-           <RestaurantList />
-           </Route>
-           <Route path="/create">
-           <RestaurantCreate />
-           </Route>
-           <Route path="/search">
-           <RestaurantSearch />
-           </Route>
-           <Route exact path="/">
-           <Home />
-           </Route>*/}
-        
+           
          
            <Route  path="/" element={<Home/>} /> 
             {/* <Route path="/update/:id" render={props=>(<RestaurantUpdate key={props.match.params.id} {...props}/> )} /> */}
            <Route path="/update"    element={<RestaurantUpdate/>} />
-            
+          
             <Route path="/list"    element={<RestaurantList/>} />
             <Route path="/create"  element={<RestaurantCreate/>} />
             <Route path="/search"  element={<RestaurantSearch/>} />
