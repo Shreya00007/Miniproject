@@ -12,6 +12,7 @@ class RestaurantCreate extends Component {
         }
     }
     create() {
+        debugger;
         var a1=document.getElementById("txtName").value;
         var a2=document.getElementById("txtRating").value;
         var a3=document.getElementById("txtAddress").value;
@@ -36,7 +37,7 @@ class RestaurantCreate extends Component {
         }
         else
         {
-           return true;
+           
            fetch('http://localhost:8000/restaurant', {
             method: "Post",
             headers: {
@@ -48,6 +49,7 @@ class RestaurantCreate extends Component {
                 alert("Restaurant has been added")
             })
         })
+        return true;
         }
 
         

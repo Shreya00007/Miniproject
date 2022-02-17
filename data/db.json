@@ -1,13 +1,6 @@
 {
   "restaurant": [
     {
-      "id": 1,
-      "name": "Pizza Hut",
-      "address": "Noida",
-      "rating": "4.5",
-      "email": "pizzahut@test.com"
-    },
-    {
       "id": 3,
       "name": "Burger King",
       "address": "Noida",
@@ -43,18 +36,18 @@
       "id": 13
     },
     {
-      "name": "Shreya",
+      "name": "shreya",
       "email": null,
-      "rating": null,
-      "address": null,
-      "id": 23
+      "rating": "4",
+      "address": "noida",
+      "id": 16
     },
     {
-      "name": null,
+      "name": "Test",
       "email": null,
-      "rating": null,
-      "address": null,
-      "id": 24
+      "rating": "4",
+      "address": "delhi",
+      "id": 17
     }
   ]
 }

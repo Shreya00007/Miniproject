@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+
 import  About from "./Images/about-photo.jpg"
 import  About1 from "./Images/food1 (1).jpg"
 import  About2 from "./Images/food2.jpg"

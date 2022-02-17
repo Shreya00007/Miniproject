@@ -1,0 +1,123 @@
+.head-gallery {
+    text-align: center;
+    font-size: 78px;
+    font-weight: 600;
+    margin-top: 21px;
+    margin-bottom: 38px;
+}
+.card-section{
+    background-image: url(https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/2021-09/Restaurant.jpg?itok=etKV79HR);
+    
+       
+        background-size: cover;
+        padding: 12px;
+    
+}
+.card-box{
+   
+   
+    margin-bottom: 50px;
+    display: flex;
+    
+}
+.card-box img {
+    width: 126px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+    float: left;
+}
+#card1 {
+    width: 285px;
+    height: 230px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.feature {
+   
+    background-color: rgb(56, 56, 56);
+    padding: 10px;
+    height: 16px;
+    border-radius: 0.2rem;
+    display: flex;
+    
+}
+.feature p {
+    color: #ffc83d;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+}
+.dish h1 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+h1 {
+    font-size: 22px;
+    font-family: poppins,Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.cuisine {
+    padding: 10px;
+    height: 16px;
+    width: 16px;
+    border-radius: 0.2rem;
+    display: flex;
+    
+}
+
+.description {
+    margin: 5px 20px 0px 20px;
+    float: left;
+}
+.description p {
+    font-size: 12px;
+    color: rgb(163, 163, 163);
+    font-family: open-sans, Arial, Helvetica, sans-serif;
+    line-height: 1.1rem;
+    margin-top: 22px;
+}
+.amount {
+    float: left;
+    margin: -18px 0px 0px 100px;
+}
+.amount h3 {
+    color: #ffc83d;
+    font-family: poppins,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    margin: 8px -23px;
+}
+.cta button {
+    
+    background-color: #ffc83d;
+    border: 1px solid #ffc83d;
+    color: #292929;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 0.2rem;
+    margin: 3px 0px 0px 9px;
+    font-family: poppins,Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.dish {
+    margin: -19px 25px -30px 20px;
+    float: left;
+}
+
+.description {
+    margin: 5px 20px 0px 20px;
+    float: left;
+}
+.amount {
+    float: left;
+    margin: -18px 0px 0px 100px;
+}
