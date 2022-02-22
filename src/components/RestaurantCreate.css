@@ -4,3 +4,6 @@ form {
     margin: 100px 426px;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
 }
+.h1{
+    color: #000 !important;
+}
